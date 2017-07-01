@@ -16,9 +16,7 @@ Reset the password:
 tor --hash-password "Your_new_password"
 ```
 
-Edit and replace the old HashedControlPassword 16:01234556789ABCDEF
-
-With the newly generated hash in the /etc/tor/torrc file from <Your_new_password> hash.
+Edit and replace the old HashedControlPassword 16:01234556789ABCDEF with the newly generated hash in the /etc/tor/torrc file from <Your_new_password> hash.
 
 Usage:
 
