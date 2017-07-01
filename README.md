@@ -21,7 +21,7 @@ tor --hash-password "Your_new_password"
 Usage:
 
 ```
-sudo ./tor_ip_switcher.py
+tor_ip_switcher.py
 ```
 
 [Forked From](https://github.com/Anonymous-Dev/Pyloris/blob/master/tor_switcher.py)
