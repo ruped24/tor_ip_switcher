@@ -13,7 +13,7 @@ Remove the comment "#" from the line with #HashedControlPassword
 Set password:
 
 ``
-sudo tor –hash-password “your new password”
+sudo tor –hash-password <Your_new_password>
 ``
 
 
