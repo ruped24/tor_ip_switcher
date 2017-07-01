@@ -5,7 +5,7 @@
 
 Setup:
 ```
-Edit /etc/torrc
+Edit /etc/tor/torrc
 Remove the comment "#" from the line with  #ControlPort 9051 
 Remove the comment "#" from the line with #HashedControlPassword 
 ```
