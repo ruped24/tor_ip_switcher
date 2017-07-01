@@ -13,7 +13,7 @@ Remove the comment "#" from the line with #HashedControlPassword
 Reset the password:
 
 ``
-tor –hash-password "Your_new_password"
+tor --hash-password "Your_new_password"
 ``
 
 
