@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python2
 """
 tor_switcher.py reloaded and refactored by Rupe to work with toriptables2.py.
 tor_ip_switcher.py is a light interface for issuing NEWNYM signals over TOR's control port.
