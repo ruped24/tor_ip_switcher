@@ -10,10 +10,10 @@ Remove the comment "#" from the line with  #ControlPort 9051
 Remove the comment "#" from the line with #HashedControlPassword 
 ```
 
-Set password:
+Reset the password:
 
 ``
-sudo tor –hash-password <Your_new_password>
+tor –hash-password "Your_new_password"
 ``
 
 
