@@ -129,7 +129,6 @@ class Switcher(Tk):
     except:
       pass
 
-
 if __name__ == '__main__':
   mw = Switcher()
   mw.mainloop()
