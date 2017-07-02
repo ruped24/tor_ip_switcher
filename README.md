@@ -12,7 +12,7 @@ Remove the comment "#" from the line with #HashedControlPassword 16:01234556789A
 
 Reset the password:
 
-```
+```bash
 tor --hash-password "Your_new_password"
 ```
 
@@ -24,7 +24,7 @@ sudo kill -HUP $(pidof tor)
 ```
 Usage:
 
-```
+```python
 tor_ip_switcher.py
 ```
 
