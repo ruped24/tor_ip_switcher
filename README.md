@@ -34,4 +34,4 @@ tor_ip_switcher.py
 
 ***
 Credits:
-[Forked From](https://github.com/Anonymous-Dev/Pyloris/blob/master/tor_switcher.py)
+[Forked From](https://github.com/Anonymous-Dev/Pyloris)
