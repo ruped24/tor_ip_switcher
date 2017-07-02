@@ -95,7 +95,8 @@ class Switcher(Tk):
       if res.find('250 OK') > -1:
         self.write('AUTHENTICATE accepted.')
       else:
-        self.write('Control responded "%s".')
+        self.write('Control responded,' + "\n"
+                   'Incorrect password: "%s"' % (passwd))
         key = self.ident + 1
         self.write('Quitting.')
     except Exception:
@@ -128,6 +129,7 @@ class Switcher(Tk):
       tn.close()
     except:
       pass
+
 
 if __name__ == '__main__':
   mw = Switcher()
