@@ -3,7 +3,7 @@
 # tor_ip_switcher
 
 
-Setup:
+### Setup:
 ```bash
 Edit: */etc/tor/torrc*
 Remove the comment "#" from the line with  #ControlPort 9051 
@@ -11,7 +11,7 @@ Remove the comment "#" from the line with #HashedControlPassword 16:01234556789A
 Reset HashedControlPassword: See below
 ```
 
-Reset the password:
+### Reset the password:
 
 ```bash
 tor --hash-password "Your_new_password"
@@ -23,7 +23,7 @@ tor --hash-password "Your_new_password"
 ```bash
 sudo kill -HUP $(pidof tor)
 ```
-Usage:
+### Usage:
 
 ```python
 tor_ip_switcher.py
