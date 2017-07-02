@@ -19,7 +19,7 @@ class Switcher(Tk):
 
   def __init__(self):
     Tk.__init__(self)
-    self.title(string=".o0O| TOR Switcher |O0o.")
+    self.title(string=".o0O| TOR IP Switcher |O0o.")
 
     self.host = StringVar()
     self.port = IntVar()
