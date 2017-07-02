@@ -29,7 +29,8 @@ sudo kill -HUP $(pidof tor)
 tor_ip_switcher.py
 ```
 
-[Forked From](https://github.com/Anonymous-Dev/Pyloris/blob/master/tor_switcher.py)
-
 
 ### [Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZQzRkVDhQR3hRSlE)
+
+***
+[Forked From](https://github.com/Anonymous-Dev/Pyloris/blob/master/tor_switcher.py)
