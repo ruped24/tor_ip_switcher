@@ -2,7 +2,7 @@
 """
 tor_switcher.py reloaded and refactored by Rupe to work with toriptables2.py.
 tor_ip_switcher.py is a light GUI interface for issuing NEWNYM signals over TOR's control port.
-Usefull for making a any DoS attack look like a DDoS attack.
+Usefull for making any DoS attack look like a DDoS attack.
 """
 
 import random
