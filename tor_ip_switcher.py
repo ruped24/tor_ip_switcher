@@ -73,9 +73,9 @@ class Switcher(Tk):
     t = time.localtime()
     try:
       self.output.insert(END,
-                         '[%02i:%02i:%02i] %s\n' % (t[3], t[4], t[3], message))
+                         '[%02i:%02i:%02i] %s\n' % (t[3], t[4], t[5], message))
     except:
-      print('[%02i:%02i:%02i] %s\n' % (t[3], t[4], t[3], message))
+      print('[%02i:%02i:%02i] %s\n' % (t[3], t[4], t[5], message))
 
   def newnym(self):
     key = self.ident
