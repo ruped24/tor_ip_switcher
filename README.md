@@ -30,7 +30,7 @@ tor_ip_switcher.py
 ```
 
 
-### [Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZWGVXZUU5eU1vQ1U)
+### [Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZUEY0MXV2bVloUWM)
 
 ***
 Credits:
