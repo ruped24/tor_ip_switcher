@@ -38,3 +38,6 @@ disown -a
 ***
 Credits:
 [Forked From](https://github.com/Anonymous-Dev/Pyloris)
+
+###### Disclaimer: ######
+###### Please don't run this tool against my site or anyone else for that matter. ######
