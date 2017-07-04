@@ -26,10 +26,10 @@ sudo kill -HUP $(pidof tor)
 ### Usage:
 
 ```python
-tor_ip_switcher.py &
+$ tor_ip_switcher.py &
 ```
 ```bash
-disown -a
+$ disown -a
 ```
 
 
