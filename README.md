@@ -24,12 +24,17 @@ tor --hash-password "Your_new_password"
 sudo kill -HUP $(pidof tor)
 ```
 ### Usage:
+* Method one
 
 ```python
 tor_ip_switcher.py &
 ```
 ```bash
 disown -a
+```
+* Method two
+```bash
+screen -dmS "torswitcher" tor_ip_switcher.py
 ```
 
 
