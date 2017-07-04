@@ -28,6 +28,9 @@ sudo kill -HUP $(pidof tor)
 ```python
 tor_ip_switcher.py &
 ```
+```bash
+disown -a
+```
 
 
 ### [Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZUEY0MXV2bVloUWM)
