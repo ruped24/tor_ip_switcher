@@ -8,7 +8,7 @@
 Edit: */etc/tor/torrc*
 Remove the comment "#" from the line with  #ControlPort 9051 
 Remove the comment "#" from the line with #HashedControlPassword 16:01234556789ABCDEF
-Reset HashedControlPassword: See below
+Reset HashedControlPassword: See below.
 ```
 
 ### Reset the password:
