@@ -3,7 +3,7 @@
 # tor_ip_switcher
 
 
-### [Setup:](https://github.com/ruped24/tor_ip_switcher/wiki/Tor-IP-Switcher-installation)
+### Setup:
 ```bash
 Edit: */etc/tor/torrc*
 Remove the comment "#" from the line with  #ControlPort 9051 
@@ -23,7 +23,7 @@ tor --hash-password "Your_new_password"
 ```bash
 sudo kill -HUP $(pidof tor)
 ```
-### Usage:
+### [Usage:](https://github.com/ruped24/tor_ip_switcher/wiki/Tor-IP-Switcher-installation)
 * Method one
 
 ```python
