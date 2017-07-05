@@ -3,7 +3,7 @@
 # tor_ip_switcher
 
 
-### Setup:
+### Setup ControlPort:
 ```bash
 Edit: */etc/tor/torrc*
 Remove the comment "#" from the line with  #ControlPort 9051 
