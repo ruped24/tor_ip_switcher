@@ -6,7 +6,7 @@
 ### Setup ControlPort:
 
 Edit: `/etc/tor/torrc`
-```
+```bash
 Remove the comment "#" from the line with  #ControlPort 9051 
 Remove the comment "#" from the line with #HashedControlPassword 16:01234556789ABCDEF
 Reset HashedControlPassword: See reset the password below.
