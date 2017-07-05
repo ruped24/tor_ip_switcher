@@ -17,9 +17,9 @@ Reset HashedControlPassword: See below.
 tor --hash-password "Your_new_password"
 ```
 
-* Edit: Replace the old HashedControlPassword 16:01234556789ABCDEF 
+* Edit: Replace the old `HashedControlPassword 16:01234556789ABCDEF` 
 
-* With the newly generated hash, replace the old hash in */etc/tor/torrc* with <Your_new_password> hash.
+* With the newly generated hash, replace the old hash in `/etc/tor/torrc` with <Your_new_password> hash.
 ```bash
 sudo kill -HUP $(pidof tor)
 ```
