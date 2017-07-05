@@ -42,7 +42,7 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 
 ***
 Credits:
-[Forked From](https://github.com/Anonymous-Dev/Pyloris)
+[Forked from](https://github.com/Anonymous-Dev/Pyloris)
 
 ###### Disclaimer: ######
 ###### Please don't run this tool against my site or anyone else for that matter. ######
