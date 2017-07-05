@@ -25,7 +25,7 @@ tor --hash-password "Your_new_password"
 sudo kill -HUP $(pidof tor)
 ```
 ### [Usage:](https://github.com/ruped24/tor_ip_switcher/wiki/Tor-IP-Switcher-installation)
-* Method one
+* Method one: Run a background job and disown
 
 ```python
 tor_ip_switcher.py &
@@ -33,7 +33,7 @@ tor_ip_switcher.py &
 ```bash
 disown -a
 ```
-* Method two
+* Method two: Run a screen session detached
 ```bash
 screen -dmS "torswitcher" tor_ip_switcher.py
 ```
