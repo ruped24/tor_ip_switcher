@@ -38,9 +38,8 @@ class Switcher(Tk):
 
     Entry(self, textvariable=self.host).grid(row=1, column=2, columnspan=2)
     Entry(self, textvariable=self.port).grid(row=2, column=2, columnspan=2)
-    Entry(
-        self, textvariable=self.passwd, show='*').grid(
-            row=3, column=2, columnspan=2)
+    Entry(self, textvariable=self.passwd, show='*').grid(
+          row=3, column=2, columnspan=2)
     Entry(self, textvariable=self.time).grid(row=4, column=2, columnspan=2)
 
     Button(self, text='Start', command=self.start).grid(row=5, column=2)
@@ -129,7 +128,6 @@ class Switcher(Tk):
       tn.close()
     except:
       pass
-
 
 if __name__ == '__main__':
   mw = Switcher()
