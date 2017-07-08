@@ -109,7 +109,7 @@ class Switcher(Tk):
         res = tn.read_until('250 OK', 5)
         if res.find('250 OK') > -1:
           try:
-            my_new_ident = load(urlopen('http://jsonip.com/'))['ip']
+            my_new_ident = load(urlopen('http://ident.me/.json'))['address']
           except URLError:
             my_new_ident = getoutput('wget -qO - v4.ifconfig.co')
           self.write('Your IP is %s' % (my_new_ident))
