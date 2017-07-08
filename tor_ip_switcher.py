@@ -73,6 +73,7 @@ class Switcher(Tk):
     try:
       self.output.insert(END,
                          '[%02i:%02i:%02i] %s\n' % (t[3], t[4], t[5], message))
+      self.output.update_idletasks()
     except:
       print('[%02i:%02i:%02i] %s\n' % (t[3], t[4], t[5], message))
 
