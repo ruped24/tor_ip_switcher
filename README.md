@@ -9,10 +9,10 @@ Edit: `/etc/tor/torrc`
 
 1. `Remove the comment "#" from the line with  #ControlPort 9051` 
 2. `Remove the comment "#" from the line with #HashedControlPassword 16:01234556789ABCDEF`
-3. `Reset HashedControlPassword 16: See reset the password below.`
+3. `Reset HashedControlPassword 16: See Reset HashedControlPassword below.`
 
 
-### Reset the password:
+### Reset HashedControlPassword:
 
 ```bash
 tor --hash-password "Your_new_password"
