@@ -6,11 +6,11 @@
 ### Setup ControlPort:
 
 Edit: `/etc/tor/torrc`
-```bash
-Remove the comment "#" from the line with  #ControlPort 9051 
-Remove the comment "#" from the line with #HashedControlPassword 16:01234556789ABCDEF
-Reset HashedControlPassword 16: See reset the password below.
-```
+
+1. `Remove the comment "#" from the line with  #ControlPort 9051` 
+2. `Remove the comment "#" from the line with #HashedControlPassword 16:01234556789ABCDEF`
+3. `Reset HashedControlPassword 16: See reset the password below.`
+
 
 ### Reset the password:
 
@@ -49,4 +49,4 @@ Anonymous-Dev
 [Forked from](https://github.com/Anonymous-Dev/Pyloris)
 
 ###### Disclaimer: ######
-###### Please don't run this tool against my site or anyone else for that matter. ######
+###### Please don't test this tool against my site or anyone else for that matter. Pen-testing Only. ######
