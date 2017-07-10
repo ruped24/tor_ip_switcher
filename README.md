@@ -22,7 +22,7 @@ tor --hash-password "Your_new_password"
 
 * With the newly generated hash, replace the old hash in `/etc/tor/torrc` with <Your_new_password> hash.
 
-* Sent tor's daemon process SIGHUP to reload the configuraton.
+* Send tor's daemon process SIGHUP to reload the configuraton.
 ```bash
 sudo kill -HUP $(pidof tor)
 ```
