@@ -20,7 +20,7 @@ tor --hash-password "Your_new_password"
 
 * Edit: Replace the old `HashedControlPassword 16:01234556789ABCDEF` 
 
-* With the newly generated hash, replace the old hash in `/etc/tor/torrc` with <Your_new_password> hash.
+* With the newly [generated hash](https://drive.google.com/open?id=0B79r4wTVj-CZbFNIM0lGTVRjbU0), replace the old hash in `/etc/tor/torrc` with <Your_new_password> hash.
 
 * Send tor's daemon process SIGHUP to reload the configuraton.
 ```bash
