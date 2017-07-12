@@ -5,7 +5,7 @@ tor_ip_switcher.py is a light GUI interface for issuing NEWNYM signals over TOR'
 Useful for making any DoS attack look like a DDoS attack.
 """
 
-import time
+from time import localtime, sleep
 from commands import getoutput
 from json import load
 from random import random
@@ -69,7 +69,7 @@ class Switcher(Tk):
     self.ident = random()
 
   def write(self, message):
-    t = time.localtime()
+    t = localtime()
     try:
       self.output.insert(END,
                          '[%02i:%02i:%02i] %s\n' % (t[3], t[4], t[5], message))
@@ -114,10 +114,9 @@ class Switcher(Tk):
             my_new_ident = getoutput('wget -qO - v4.ifconfig.co')
           self.write('Your IP is %s' % (my_new_ident))
         else:
-          #self.write('Control responded "%s".')
           key = self.ident + 1
           self.write('Quitting.')
-        time.sleep(interval)
+        sleep(interval)
       except Exception, ex:
         self.write('There was an error: %s.' % (ex))
         key = self.ident + 1
