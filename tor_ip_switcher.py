@@ -5,12 +5,12 @@ tor_ip_switcher.py is a light GUI interface for issuing NEWNYM signals over TOR'
 Useful for making any DoS attack look like a DDoS attack.
 """
 
-import random
-import telnetlib
-import thread
 import time
 from commands import getoutput
 from json import load
+from random import random
+from telnetlib import Telnet
+from thread import start_new_thread
 from Tkinter import *
 from urllib2 import URLError, urlopen
 
@@ -58,15 +58,15 @@ class Switcher(Tk):
 
   def start(self):
     self.write('TOR Switcher starting.')
-    self.ident = random.random()
-    thread.start_new_thread(self.newnym, ())
+    self.ident = random()
+    start_new_thread(self.newnym, ())
 
   def stop(self):
     try:
       self.write('TOR Switcher stopping.')
     except:
       pass
-    self.ident = random.random()
+    self.ident = random()
 
   def write(self, message):
     t = time.localtime()
@@ -84,12 +84,12 @@ class Switcher(Tk):
     interval = self.time.get()
 
     try:
-      tn = telnetlib.Telnet(host, port)
+      telnet = Telnet(host, port)
       if passwd == '':
-        tn.write("AUTHENTICATE\r\n")
+        telnet.write("AUTHENTICATE\r\n")
       else:
-        tn.write("AUTHENTICATE \"%s\"\r\n" % (passwd))
-      res = tn.read_until('250 OK', 5)
+        telnet.write("AUTHENTICATE \"%s\"\r\n" % (passwd))
+      res = telnet.read_until('250 OK', 5)
 
       if res.find('250 OK') > -1:
         self.write('AUTHENTICATE accepted.')
@@ -105,8 +105,8 @@ class Switcher(Tk):
 
     while key == self.ident:
       try:
-        tn.write("signal NEWNYM\r\n")
-        res = tn.read_until('250 OK', 5)
+        telnet.write("signal NEWNYM\r\n")
+        res = telnet.read_until('250 OK', 5)
         if res.find('250 OK') > -1:
           try:
             my_new_ident = load(urlopen('http://ident.me/.json'))['address']
@@ -124,8 +124,8 @@ class Switcher(Tk):
         self.write('Quitting.')
 
     try:
-      tn.write("QUIT\r\n")
-      tn.close()
+      telnet.write("QUIT\r\n")
+      telnet.close()
     except:
       pass
 
