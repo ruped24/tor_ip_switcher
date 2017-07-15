@@ -41,7 +41,7 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 ```
 
 
-### [Screenshot](https://drive.google.com/file/d/0B79r4wTVj-CZOGJadlBtWWxPWFk/view)
+### [Screenshot](https://drive.google.com/file/d/0B79r4wTVj-CZY0FGR05hNE4tRGM/view)
 
 ***
 Credits:
