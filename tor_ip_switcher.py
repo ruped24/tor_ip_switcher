@@ -31,10 +31,10 @@ class Switcher(Tk):
     self.passwd.set('')
     self.time.set('30')
 
-    Label(self, text='Host:').grid(row=1, column=1)
-    Label(self, text='Port:').grid(row=2, column=1)
-    Label(self, text='Password:').grid(row=3, column=1)
-    Label(self, text='Interval:').grid(row=4, column=1)
+    Label(self, text='Host:').grid(row=1, column=1, sticky=E)
+    Label(self, text='Port:').grid(row=2, column=1, sticky=E)
+    Label(self, text='Password:').grid(row=3, column=1, sticky=E)
+    Label(self, text='Interval:').grid(row=4, column=1, sticky=E)
 
     Entry(self, textvariable=self.host).grid(row=1, column=2, columnspan=2)
     Entry(self, textvariable=self.port).grid(row=2, column=2, columnspan=2)
