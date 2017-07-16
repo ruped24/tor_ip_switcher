@@ -43,6 +43,7 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 
 ### [Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZVm56M3pMdEx3X28)
 
+### [Troubleshooting](https://github.com/ruped24/tor_ip_switcher/wiki/Troubleshooting)
 ***
 Credits:
 
