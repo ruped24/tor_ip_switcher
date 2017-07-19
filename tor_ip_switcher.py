@@ -5,12 +5,13 @@ tor_ip_switcher.py is a light GUI interface for issuing NEWNYM signals over TOR'
 Useful for making any DoS attack look like a DDoS attack.
 """
 
-from time import localtime, sleep
+import tkMessageBox
 from commands import getoutput
 from json import load
 from random import random
 from telnetlib import Telnet
 from thread import start_new_thread
+from time import localtime, sleep
 from Tkinter import *
 from urllib2 import URLError, urlopen
 
@@ -76,6 +77,9 @@ class Switcher(Tk):
     except:
       print('[%02i:%02i:%02i] %s\n' % (t[3], t[4], t[5], message))
 
+  def error(self):
+    tkMessageBox.showerror("TOR IP Switcher", "Tor daemon not running!")
+
   def newnym(self):
     key = self.ident
     host = self.host.get()
@@ -100,6 +104,7 @@ class Switcher(Tk):
         self.write('Quitting.')
     except Exception:
       self.write('There was an error!')
+      self.error()
       key = self.ident + 1
       self.write('Quitting.')
 
