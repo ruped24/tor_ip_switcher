@@ -38,7 +38,8 @@ class Switcher(Tk):
     Label(self, text='Password:').grid(row=3, column=1, sticky=E)
     Label(self, text='Interval:').grid(row=4, column=1, sticky=E)
 
-    Entry(self, textvariable=self.host).grid(row=1, column=2, columnspan=2)
+    Entry(self, textvariable=self.host).grid(
+          row=1, column=2, columnspan=2, pady=4)
     Entry(self, textvariable=self.port).grid(row=2, column=2, columnspan=2)
     Entry(self, textvariable=self.passwd, show='*').grid(
           row=3, column=2, columnspan=2)
@@ -79,7 +80,7 @@ class Switcher(Tk):
       print('[%02i:%02i:%02i] %s\n' % (t[3], t[4], t[5], message))
 
   def error(self):
-    showerror("TOR IP Switcher", "Tor daemon not running!")
+    showerror('TOR IP Switcher', 'Tor daemon not running!')
 
   def newnym(self):
     key = self.ident
