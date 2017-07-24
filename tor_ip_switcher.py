@@ -8,6 +8,7 @@ Useful for making any DoS attack look like a DDoS attack.
 from commands import getoutput
 from json import load
 from random import random
+from ScrolledText import ScrolledText
 from telnetlib import Telnet
 from thread import start_new_thread
 from time import localtime, sleep
@@ -46,7 +47,7 @@ class Switcher(Tk):
     Button(self, text='Start', command=self.start).grid(row=5, column=2)
     Button(self, text='Stop', command=self.stop).grid(row=5, column=3)
 
-    self.output = Text(
+    self.output = ScrolledText(
         self,
         foreground="white",
         background="black",
@@ -55,7 +56,7 @@ class Switcher(Tk):
         wrap=WORD,
         height=8,
         width=40)
-    self.output.grid(row=1, column=4, rowspan=5)
+    self.output.grid(row=1, column=4, rowspan=5, padx=4, pady=4)
 
   def start(self):
     self.write('TOR Switcher starting.')
@@ -132,6 +133,7 @@ class Switcher(Tk):
       telnet.close()
     except:
       pass
+
 
 if __name__ == '__main__':
   mw = Switcher()
