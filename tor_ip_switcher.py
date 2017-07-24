@@ -39,7 +39,7 @@ class Switcher(Tk):
     Label(self, text='Interval:').grid(row=4, column=1, sticky=E)
 
     Entry(self, textvariable=self.host).grid(
-          row=1, column=2, columnspan=2, pady=4)
+          row=1, column=2, columnspan=2)
     Entry(self, textvariable=self.port).grid(row=2, column=2, columnspan=2)
     Entry(self, textvariable=self.passwd, show='*').grid(
           row=3, column=2, columnspan=2)
