@@ -52,4 +52,4 @@ Anonymous-Dev
 [Forked from](https://github.com/Anonymous-Dev/Pyloris)
 
 ###### Disclaimer: ######
-###### Please don't test this tool against my site or anyone else for that matter. Pen-testing Only. ######
+###### Pen-testing Only. ######
