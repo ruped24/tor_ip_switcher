@@ -74,7 +74,7 @@ class Switcher(Tk):
     t = localtime()
     try:
       self.output.insert(END,
-                         '[%02i:%02i:%02i] %s\n' % (t[3], t[4], t[5], message))
+                         '[%02i:%02i:%02i] %s' % (t[3], t[4], t[5], message))
       self.output.yview(MOVETO, 1.0)
     except:
       print('[%02i:%02i:%02i] %s\n' % (t[3], t[4], t[5], message))
