@@ -40,8 +40,12 @@ disown -a
 screen -dmS "torswitcher" tor_ip_switcher.py
 ```
 
-
+### Tor IP Switcher
 ### [Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZVm56M3pMdEx3X28)
+
+### [Tor Manager](https://bitbucket.org/ruped24/tor_manager/src)
+
+### [Screenshot](https://drive.google.com/file/d/0B79r4wTVj-CZdUtGU3p6WldHX2s/view)
 
 ### [Troubleshooting and FAQ](https://github.com/ruped24/tor_ip_switcher/wiki/Troubleshooting)
 ***
