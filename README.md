@@ -39,6 +39,7 @@ disown -a
 ```bash
 screen -dmS "torswitcher" tor_ip_switcher.py
 ```
+***
 
 ### Tor IP Switcher
 ### [Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZVm56M3pMdEx3X28)
