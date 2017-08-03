@@ -21,6 +21,7 @@ class Switcher(Tk):
 
   def __init__(self):
     Tk.__init__(self)
+    self.resizable(0, 0)
     self.title(string=".o0O| TOR IP Switcher |O0o.")
 
     self.host = StringVar()
