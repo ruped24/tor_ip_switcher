@@ -15,18 +15,15 @@ Edit: `/etc/tor/torrc`
 
 * `sudo sed -i '/HashedControlPassword /s/^#//' /etc/tor/torrc`
 
-3. Reset HashedControlPassword 16: See Reset HashedControlPassword below.
-
+3. Reset HashedControlPassword. See below.
 
 ### Reset HashedControlPassword:
 
-```bash
-tor --hash-password "Your_new_password"
-```
+* `tor --hash-password "Your_new_password"`
 
-* Edit: Replace the old `HashedControlPassword 16:01234556789ABCDEF` 
+* Replace the old hashed password below `16:01234556789ABCDEF` with <16:your_new_password_hash>.
 
-* With the newly [generated hash](https://drive.google.com/open?id=0B79r4wTVj-CZbFNIM0lGTVRjbU0), replace the old hash in `/etc/tor/torrc` with <Your_new_password> hash.
+* `sudo sed -i 's/^HashedControlPassword 16:.*[A-Za-z0-9_]/HashedControlPassword 16:01234556789ABCDEF/' /etc/tor/torrc`
 
 * Send tor's daemon process SIGHUP to reload the configuraton.
 ```bash
