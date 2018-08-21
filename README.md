@@ -7,7 +7,7 @@
 
 [Runing the automated setup script:](https://drive.google.com/open?id=16YmyR4qVzEFOUSDhbPIeX-nzOPoKMszH)
 
-`sudo python tips_setup.py`
+`sudo python tips_setup.py password`
 
 For CLI Ninjas:
 
