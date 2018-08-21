@@ -22,7 +22,7 @@ def controlPort_setup():
 
 def controlHashed_password():
   system(
-      "sudo sed -i 's/^HashedControlPassword 16:.*[A-Z0-9]*$/HashedControlPassword %s /' /etc/tor/torrc"
+      "sudo sed -i 's/^HashedControlPassword 16:.*[A-Z0-9]*$/HashedControlPassword %s/' /etc/tor/torrc"
       % ControlHashedPassword)
 
 
