@@ -15,7 +15,7 @@ Edit: `/etc/tor/torrc`
 
 * `sudo sed -i '/HashedControlPassword /s/^#//' /etc/tor/torrc`
 
-3. Reset HashedControlPassword. 
+3. Reset HashedControlPassword. See below. 
 
 ### [Reset HashedControlPassword](https://drive.google.com/open?id=0B79r4wTVj-CZbFNIM0lGTVRjbU0):
 
