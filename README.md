@@ -23,7 +23,7 @@ Edit: `/etc/tor/torrc`
 
 * Replace the old hashed password below `16:01234556789ABCDEF` with <16:your_new_password_hash>.
 
-* `sudo sed -i 's/^HashedControlPassword 16:.*[A-Za-z0-9_]/HashedControlPassword 16:01234556789ABCDEF/' /etc/tor/torrc`
+* `sudo sed 's/^HashedControlPassword 16:.*[A-Z0-9]*$/HashedControlPassword 16:01234556789ABCDEF/' /etc/tor/torrc`
 
 * Send tor's daemon process SIGHUP to reload the configuraton.
 ```bash
