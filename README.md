@@ -11,6 +11,8 @@
 
 * `sudo kill -HUP $(pidof tor)`
 
+***
+
 For CLI Ninjas:
 
 Manual edit: `/etc/tor/torrc`
@@ -37,6 +39,8 @@ Manual edit: `/etc/tor/torrc`
 ```bash
 sudo kill -HUP $(pidof tor)
 ```
+***
+
 ### [Usage:](https://github.com/ruped24/tor_ip_switcher/wiki/Tor-IP-Switcher-installation)
 * Method One: Run-as a background job and disown
 
