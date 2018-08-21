@@ -9,11 +9,11 @@ Edit: `/etc/tor/torrc`
 
 1. Remove the comment "#" from the line with  #ControlPort 9051
 
-`sudo sed -i '/ControlPort /s/^#//' /etc/tor/torrc`
+* `sudo sed -i '/ControlPort /s/^#//' /etc/tor/torrc`
 
 2. Remove the comment "#" from the line with #HashedControlPassword 16:01234556789ABCDEF
 
-`sudo sed -i '/HashedControlPassword /s/^#//' /etc/tor/torrc`
+* `sudo sed -i '/HashedControlPassword /s/^#//' /etc/tor/torrc`
 
 3. Reset HashedControlPassword 16: See Reset HashedControlPassword below.
 
