@@ -5,14 +5,6 @@
 
 ### Setup ControlPort:
 
-[Running the automated setup script:](https://drive.google.com/open?id=16YmyR4qVzEFOUSDhbPIeX-nzOPoKMszH)
-
-* `sudo python tips_setup.py password`
-
-* `sudo kill -HUP $(pidof tor)`
-
-***
-
 For CLI Ninjas:
 
 Manual edit: `/etc/tor/torrc`
