@@ -5,7 +5,13 @@
 
 ### Setup ControlPort:
 
-Edit: `/etc/tor/torrc`
+[Runing the automated setup script:](https://drive.google.com/open?id=16YmyR4qVzEFOUSDhbPIeX-nzOPoKMszH)
+
+`sudo python tips_setup.py`
+
+For CLI Ninjas:
+
+Manual edit: `/etc/tor/torrc`
 
 1. Remove the comment "#" from the line with  #ControlPort 9051
 
