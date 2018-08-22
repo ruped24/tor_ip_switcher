@@ -8,7 +8,7 @@ from __future__ import print_function, unicode_literals
 
 from commands import getoutput
 from os import system
-from os.path import basename
+from os.path import basename, isfile
 from sys import argv
 
 ControlHashedPassword = ''.join(
@@ -31,15 +31,18 @@ if __name__ == '__main__':
     exit(" \n[!] Usage: %s <your_new_password>\n" % basename(__file__))
   else:
     try:
-      controlPort_setup()
-      controlHashed_password()
-      print(
-          "\n \033[92m[" + u'\u2714' + "]\033[0m ControlPort: Enabled\n",
-          "\033[92m[" + u'\u2714' + "]\033[0m ControlHashedPassword: Enabled\n",
-          "\033[92m[" + u'\u2714' +
-          "]\033[0m /etc/tor/torrc updated successfully!\n", "\033[92m[" +
-          u'\u2719' + "]\033[0m Password set to: %s\n" % ''.join(argv[1:]),
-          "\033[92m[" + u'\u2719' +
-          "]\033[0m ControlHashedPassword: %s\n" % ControlHashedPassword)
+      if isfile('/etc/tor/torrc'):
+        controlPort_setup()
+        controlHashed_password()
+        print("\n \033[92m[" + u'\u2714' + "]\033[0m ControlPort: Enabled\n",
+              "\033[92m[" + u'\u2714' +
+              "]\033[0m ControlHashedPassword: Enabled\n", "\033[92m[" +
+              u'\u2714' + "]\033[0m /etc/tor/torrc updated successfully!\n",
+              "\033[92m[" + u'\u2719' +
+              "]\033[0m Password set to: %s\n" % ''.join(argv[1:]),
+              "\033[92m[" + u'\u2719' +
+              "]\033[0m ControlHashedPassword: %s\n" % ControlHashedPassword)
+      else:
+        exit("\033[91m[!]\033[0m /etc/tor/torrc missing.")
     except Exception as err:
       print(err)
