@@ -3,9 +3,9 @@
 # tor_ip_switcher
 
 
-### Setup ControlPort:
+### [Setup ControlPort](https://drive.google.com/open?id=16YmyR4qVzEFOUSDhbPIeX-nzOPoKMszH):
 
-[Running the automated setup script:](https://drive.google.com/open?id=16YmyR4qVzEFOUSDhbPIeX-nzOPoKMszH)
+Running the automated setup script:
 
 * `sudo python tips_setup.py "password"`
 
