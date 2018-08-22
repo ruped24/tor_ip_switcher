@@ -10,8 +10,6 @@ Running the automated setup script:
 
 * `sudo python tips_setup.py "password"`
 
-* `sudo kill -HUP $(pidof tor)`
-
 ***
 
 For CLI Ninjas:
