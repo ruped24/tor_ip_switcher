@@ -12,7 +12,7 @@ Running the automated setup script:
 
 ***
 
-For CLI Ninjas:
+### [Reset HashedControlPassword](https://drive.google.com/open?id=0B79r4wTVj-CZbFNIM0lGTVRjbU0):
 
 Manual edit: `/etc/tor/torrc`
 
@@ -24,9 +24,7 @@ Manual edit: `/etc/tor/torrc`
 
 * `sudo sed -i '/HashedControlPassword /s/^#//' /etc/tor/torrc`
 
-3. Reset HashedControlPassword. See below. 
-
-### [Reset HashedControlPassword](https://drive.google.com/open?id=0B79r4wTVj-CZbFNIM0lGTVRjbU0):
+3. Reset HashedControlPassword.
 
 * `tor --hash-password "Your_new_password"`
 
