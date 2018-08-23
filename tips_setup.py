@@ -7,7 +7,7 @@
 from __future__ import print_function, unicode_literals
 
 from commands import getoutput
-from os import system
+from os import geteuid, system
 from os.path import basename, isfile
 from sys import argv
 
@@ -36,6 +36,8 @@ def reload_tor_config():
 
 
 if __name__ == '__main__':
+  if geteuid() is not 0:
+    exit('Run as super user!')
   if argv[1:] == list():
     exit(" \n[!] Usage: %s <your_new_password>\n" % basename(__file__))
   else:
