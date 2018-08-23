@@ -16,11 +16,11 @@ For CLI Ninjas:
 
 Manual edit: `/etc/tor/torrc`
 
-1. Remove the comment "#" from the line with  #ControlPort 9051
+1. Remove the comment "#" from the line with  [#ControlPort 9051](https://github.com/torproject/tor/blob/ac44e70ffc047941d196596dd651019c054b7faf/src/config/torrc.sample.in#L57)
 
 * `sudo sed -i '/ControlPort /s/^#//' /etc/tor/torrc`
 
-2. Remove the comment "#" from the line with #HashedControlPassword 16:01234556789ABCDEF
+2. Remove the comment "#" from the line with [#HashedControlPassword](https://github.com/torproject/tor/blob/ac44e70ffc047941d196596dd651019c054b7faf/src/config/torrc.sample.in#L60)
 
 * `sudo sed -i '/HashedControlPassword /s/^#//' /etc/tor/torrc`
 
