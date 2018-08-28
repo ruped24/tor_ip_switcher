@@ -29,10 +29,10 @@ def controlHashed_password():
 def reload_tor_config():
   tor_running = getoutput('pidof tor')
   if tor_running:
-    system('kill -HUP $(pidof tor)')
-    print("\n \033[92m[" + u'\u2714' + "]\033[0m Tor config: Reloaded")
+    system('kill -HUP %s' % tor_running)
+    print("\n \033[92m[" + u'\u2714' + "]\033[0m Tor Config: Reloaded")
   else:
-    print(str())
+    print("\n \033[91m[" + u'\u2718' + "]\033[0m Tor Daemon: Not running")
 
 
 if __name__ == '__main__':
@@ -49,7 +49,7 @@ if __name__ == '__main__':
         print(" \033[92m[" + u'\u2714' + "]\033[0m ControlPort: Enabled\n",
               "\033[92m[" + u'\u2714' +
               "]\033[0m ControlHashedPassword: Enabled\n", "\033[92m[" +
-              u'\u2714' + "]\033[0m /etc/tor/torrc updated successfully!\n",
+              u'\u2714' + "]\033[0m /etc/tor/torrc: Updated successfully\n",
               "\033[92m[" + u'\u2719' +
               "]\033[0m Password set to: %s\n" % ''.join(argv[1:]),
               "\033[92m[" + u'\u2719' +
