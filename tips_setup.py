@@ -2,12 +2,15 @@
 #
 # Configuration tool for tor_ip_switcher /etc/tor/torrc
 #
+# [!] Usage: tips_setup.py <your_new_password>
+#
 # By Rupe 08.21.2018
 
 from __future__ import print_function, unicode_literals
 
 from commands import getoutput
-from os import geteuid, system
+from os import geteuid
+from subprocess import call
 from os.path import basename, isfile
 from sys import argv
 
@@ -16,20 +19,22 @@ ControlHashedPassword = ''.join(
 
 
 def controlPort_setup():
-  system("sed -i '/ControlPort /s/^#//' /etc/tor/torrc")
-  system("sed -i '/HashedControlPassword /s/^#//' /etc/tor/torrc")
+  call(["sed", "-i", "/ControlPort /s/^#//", "/etc/tor/torrc"])
+  call(["sed", "-i", "/HashedControlPassword /s/^#//", "/etc/tor/torrc"])
 
 
 def controlHashed_password():
-  system(
-      "sed -i 's/^HashedControlPassword 16:.*[A-Z0-9]/HashedControlPassword %s/' /etc/tor/torrc"
-      % ControlHashedPassword)
+  call([
+      "sed", "-i",
+      "s/^HashedControlPassword 16:.*[A-Z0-9]/HashedControlPassword %s/" %
+      ControlHashedPassword, "/etc/tor/torrc"
+  ])
 
 
 def reload_tor_config():
   tor_running = getoutput('pidof tor')
   if tor_running:
-    system('kill -HUP %s' % tor_running)
+    call(['kill', '-HUP', '%s' % tor_running])
     print("\n \033[92m[" + u'\u2714' + "]\033[0m Tor Config: Reloaded")
   else:
     print("\n \033[91m[" + u'\u2718' + "]\033[0m Tor Daemon: Not running")
