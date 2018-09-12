@@ -55,10 +55,10 @@ if __name__ == '__main__':
               "\033[92m[" + u'\u2714' +
               "]\033[0m HashedControlPassword: Enabled\n", "\033[92m[" +
               u'\u2714' + "]\033[0m /etc/tor/torrc: Updated successfully\n",
+              "\033[92m[" + u'\u2719' + "]\033[0m Password set to: \033[92m" +
+              "%s" % ''.join(argv[1:]) + "\033[0m" + "\n",
               "\033[92m[" + u'\u2719' +
-              "]\033[0m Password set to: %s\n" % ''.join(argv[1:]),
-              "\033[92m[" + u'\u2719' +
-              "]\033[0m HashedControlPassword: %s\n" % ControlHashedPassword)
+              "]\033[0m HashedControlPassword %s\n" % ControlHashedPassword)
       else:
         exit("\033[91m[!]\033[0m /etc/tor/torrc missing.")
     except Exception as err:
