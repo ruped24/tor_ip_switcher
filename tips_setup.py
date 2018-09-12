@@ -2,7 +2,7 @@
 #
 # Configuration tool for tor_ip_switcher /etc/tor/torrc
 #
-# [!] Usage: tips_setup.py <your_new_password>
+# Usage: tips_setup.py <your_new_password>
 #
 # By Rupe 08.21.2018
 
@@ -51,14 +51,14 @@ if __name__ == '__main__':
         controlPort_setup()
         controlHashed_password()
         reload_tor_config()
-        print(" \033[92m[" + u'\u2714' + "]\033[0m ControlPort: Enabled\n",
+        print(" \033[92m[" + u'\u2714' + "]\033[0m ControlPort 9051: Enabled\n",
               "\033[92m[" + u'\u2714' +
-              "]\033[0m ControlHashedPassword: Enabled\n", "\033[92m[" +
+              "]\033[0m HashedControlPassword: Enabled\n", "\033[92m[" +
               u'\u2714' + "]\033[0m /etc/tor/torrc: Updated successfully\n",
               "\033[92m[" + u'\u2719' +
               "]\033[0m Password set to: %s\n" % ''.join(argv[1:]),
               "\033[92m[" + u'\u2719' +
-              "]\033[0m ControlHashedPassword: %s\n" % ControlHashedPassword)
+              "]\033[0m HashedControlPassword: %s\n" % ControlHashedPassword)
       else:
         exit("\033[91m[!]\033[0m /etc/tor/torrc missing.")
     except Exception as err:
