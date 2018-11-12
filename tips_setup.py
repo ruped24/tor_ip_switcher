@@ -10,9 +10,10 @@ from __future__ import print_function, unicode_literals
 
 from commands import getoutput
 from os import geteuid
-from subprocess import call
 from os.path import basename, isfile
-from sys import argv
+from subprocess import call
+from sys import argv, stdout
+from time import sleep
 
 ControlHashedPassword = ''.join(
     getoutput('tor --hash-password "%s"' % ''.join(argv[1:])).split()[-1:])
@@ -47,7 +48,15 @@ if __name__ == '__main__':
     exit(" \n[!] Usage: %s <your_new_password>\n" % basename(__file__))
   else:
     try:
+      info = \
+      """
+      [\033[93m\u003F\033[0m] Gathering torrc config information [\033[93m\u003F\033[0m]
+      """
       if isfile('/etc/tor/torrc'):
+        for i in info:
+          sleep(.02)
+          stdout.write(i)
+          stdout.flush()
         controlPort_setup()
         controlHashed_password()
         reload_tor_config()
@@ -57,8 +66,8 @@ if __name__ == '__main__':
               u'\u2714' + "]\033[0m /etc/tor/torrc: Updated successfully\n",
               "\033[92m[" + u'\u2719' + "]\033[0m Password set to: \033[92m" +
               "%s" % ''.join(argv[1:]) + "\033[0m" + "\n",
-              "\033[92m[" + u'\u2719' +
-              "]\033[0m HashedControlPassword %s\n" % ControlHashedPassword)
+              "\033[92m[" + u'\u2719' + "]\033[0m HashedControlPassword %s\n" %
+              ControlHashedPassword)
       else:
         exit("\033[91m[!]\033[0m /etc/tor/torrc missing.")
     except Exception as err:
