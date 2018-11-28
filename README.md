@@ -6,7 +6,7 @@
 ### [Setup ControlPort](https://drive.google.com/open?id=16YmyR4qVzEFOUSDhbPIeX-nzOPoKMszH):
 
 Running the automated setup script:
-* `[!] Usage: tips_setup.py <your_new_password>`
+* `Usage: tips_setup.py <your_new_password>`
 
 * `sudo python tips_setup.py "password"`
 
@@ -38,7 +38,7 @@ sudo kill -HUP $(pidof tor)
 ```
 ***
 
-### [Usage:](https://github.com/ruped24/tor_ip_switcher/wiki/Tor-IP-Switcher-installation)
+### [Usage:](https://drive.google.com/file/d/0B79r4wTVj-CZOGJadlBtWWxPWFk/view)
 * Method One: Run-as a background job and disown
 
 ```python
@@ -59,6 +59,8 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 ### [Tor Manager](https://bitbucket.org/ruped24/tor_manager/src)
 
 * ### [Screenshot](https://drive.google.com/file/d/0B79r4wTVj-CZdUtGU3p6WldHX2s/view)
+
+### [Installation and Setup](https://github.com/ruped24/tor_ip_switcher/wiki/Tor-IP-Switcher-installation)
 
 ### [Troubleshooting and FAQ](https://github.com/ruped24/tor_ip_switcher/wiki/Troubleshooting)
 ***
