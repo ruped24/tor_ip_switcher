@@ -117,7 +117,7 @@ class Switcher(Tk):
         res = telnet.read_until('250 OK', 5)
         if res.find('250 OK') > -1:
           try:
-            my_new_ident = load(urlopen('http://ident.me/.json'))['address']
+            my_new_ident = load(urlopen('https://check.torproject.org/api/ip'))['IP']
           except URLError:
             my_new_ident = getoutput('wget -qO - v4.ifconfig.co')
           self.write('Your IP is %s' % (my_new_ident))
