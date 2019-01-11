@@ -2,6 +2,8 @@
 
 # tor_ip_switcher
 
+![](https://img.shields.io/badge/tor_ip_swithcer-python-blue.svg)
+
 
 ### [Setup ControlPort](https://drive.google.com/open?id=16YmyR4qVzEFOUSDhbPIeX-nzOPoKMszH):
 
