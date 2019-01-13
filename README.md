@@ -16,7 +16,7 @@ Running the automated setup script:
 
 ### [Reset HashedControlPassword](https://drive.google.com/open?id=0B79r4wTVj-CZbFNIM0lGTVRjbU0):
 
-Edit with editor: `/etc/tor/torrc`
+Edit with sed editor: `/etc/tor/torrc`
 
 1. Remove the comment "#" from the line with  [#ControlPort 9051](https://github.com/torproject/tor/blob/ac44e70ffc047941d196596dd651019c054b7faf/src/config/torrc.sample.in#L57)
 
