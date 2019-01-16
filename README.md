@@ -2,7 +2,7 @@
 
 # tor_ip_switcher
 
-![](https://img.shields.io/badge/tor__ip__switcher-python_2.7-blue.svg)![](https://img.shields.io/badge/dependencies-toriptables2_python--tk_tor-orange.svg) 
+![](https://img.shields.io/badge/tor__ip__switcher-python_2.7-blue.svg) ![](https://img.shields.io/badge/dependencies-toriptables2_python--tk_tor-orange.svg) 
 
 
 ### [Setup ControlPort](https://drive.google.com/open?id=16YmyR4qVzEFOUSDhbPIeX-nzOPoKMszH):
