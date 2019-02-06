@@ -40,7 +40,7 @@ sudo kill -HUP $(pidof tor)
 ```
 ***
 
-### [Usage:](https://drive.google.com/file/d/0B79r4wTVj-CZOGJadlBtWWxPWFk/view)
+### [Usage:](https://drive.google.com/file/d/1WR2mALkhO34PW2YK_CFJsLM7xnaeLK8w/view)
 * Method One: Run-as a background job and disown
 
 ```python
