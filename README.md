@@ -2,7 +2,7 @@
 
 # tor_ip_switcher
 
-![](https://img.shields.io/badge/tor__ip__switcher-python_2.7-blue.svg?style=flat-square) ![](https://img.shields.io/badge/dependencies-toriptables2_python--tk_tor-orange.svg?style=flat-square) 
+![](https://img.shields.io/badge/tor__ip__switcher-python_2.7-blue.svg?style=flat-square) ![](https://img.shields.io/badge/dependencies-toriptables2_python--tk_tor-orange.svg?style=flat-square) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/ruped24/tor_ip_switcher/graphs/commit-activity)
 
 
 ### [Setup ControlPort](https://drive.google.com/open?id=16YmyR4qVzEFOUSDhbPIeX-nzOPoKMszH):
