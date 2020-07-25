@@ -34,9 +34,9 @@ Edit with sed editor: `/etc/tor/torrc`
 
 * `sudo sed -i 's/^HashedControlPassword 16:.*[A-Z0-9]*$/HashedControlPassword 16:01234556789ABCDEF/' /etc/tor/torrc`
 
-* Send tor's daemon process SIGHUP to reload the configuraton.
+* Reload the configuraton.
 ```bash
-sudo kill -HUP $(pidof tor)
+sudo toriptables2.py -r
 ```
 ***
 
