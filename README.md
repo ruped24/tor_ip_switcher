@@ -34,7 +34,7 @@ Edit with sed editor: `/etc/tor/torrc`
 
 * `sudo sed -i 's/^HashedControlPassword 16:.*[A-Z0-9]*$/HashedControlPassword 16:01234556789ABCDEF/' /etc/tor/torrc`
 
-* Reload the configuraton.
+* [Reload](https://github.com/ruped24/toriptables2#to-change-tor-ip-address) the configuraton.
 ```bash
 sudo toriptables2.py -r
 ```
