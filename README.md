@@ -54,11 +54,20 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 ***
 
 ### Tor IP Switcher
-* ### [Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZVm56M3pMdEx3X28)
+<details><summary>Expand for screenshot</summary>
+  <br>
+
+[Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZVm56M3pMdEx3X28)
+
+</details>
 
 ### [Tor Manager](https://bitbucket.org/ruped24/tor_manager/src)
+<details><summary>Expand for screenshot</summary>
+  <br>
 
-* ### [Screenshot](https://drive.google.com/file/d/0B79r4wTVj-CZdUtGU3p6WldHX2s/view)
+[Screenshot](https://drive.google.com/file/d/0B79r4wTVj-CZdUtGU3p6WldHX2s/view)
+
+</details>
 
 ### [Installation and Setup](https://github.com/ruped24/tor_ip_switcher/wiki/Tor-IP-Switcher-installation)
 
