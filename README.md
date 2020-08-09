@@ -53,7 +53,7 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 ```
 ***
 
-### Tor IP Switcher
+### [Tor IP Switcher](https://github.com/ruped24/tor_ip_switcher)
 <details><summary>Expand for screenshot</summary>
   <br>
 
