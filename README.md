@@ -15,8 +15,8 @@ Running the automated setup script
 ***
 
 ### [Reset HashedControlPassword](https://drive.google.com/open?id=0B79r4wTVj-CZbFNIM0lGTVRjbU0):
-- <details><summary>Expand for manually resetting password</summary>
-  <br>
+<details><summary>Expand for manually resetting password</summary>
+<br>
 
 Edit with sed editor: `/etc/tor/torrc`
 
