@@ -15,6 +15,8 @@ Running the automated setup script:
 ***
 
 ### [Reset HashedControlPassword](https://drive.google.com/open?id=0B79r4wTVj-CZbFNIM0lGTVRjbU0):
+<details><summary>Expand for manually resetting hash password</summary>
+  <br>
 
 Edit with sed editor: `/etc/tor/torrc`
 
@@ -35,6 +37,8 @@ Edit with sed editor: `/etc/tor/torrc`
 * `sudo sed -i 's/^HashedControlPassword 16:.*[A-Z0-9]*$/HashedControlPassword 16:01234556789ABCDEF/' /etc/tor/torrc`
 
 * [Reload](https://github.com/ruped24/toriptables2#to-change-tor-ip-address) the configuraton. `sudo toriptables2.py -r`
+
+</details>
 
 ***
 
