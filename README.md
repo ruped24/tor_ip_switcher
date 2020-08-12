@@ -58,7 +58,7 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 ***
 
 ### [Tor IP Switcher](https://github.com/ruped24/tor_ip_switcher#tor_ip_switcher)
-<details><summary>Expand for screenshot</summary>
+<details><summary>Expand for screenie</summary>
   <br>
 
 [Tor IP Switcher Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZVm56M3pMdEx3X28)
@@ -66,7 +66,7 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 </details>
 
 ### [Tor Manager](https://bitbucket.org/ruped24/tor_manager/src)
-<details><summary>Expand for screenshot</summary>
+<details><summary>Expand for screenie</summary>
   <br>
 
 [Tor Manager Screenshot](https://drive.google.com/file/d/0B79r4wTVj-CZdUtGU3p6WldHX2s/view)
