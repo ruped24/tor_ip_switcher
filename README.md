@@ -61,7 +61,7 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 <details><summary>Expand for screenie</summary>
   <br>
 
-[Tor IP Switcher Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZVm56M3pMdEx3X28)
+[▹ Tor IP Switcher Screenshot](https://drive.google.com/open?id=0B79r4wTVj-CZVm56M3pMdEx3X28)
 
 </details>
 
@@ -69,7 +69,7 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 <details><summary>Expand for screenie</summary>
   <br>
 
-[Tor Manager Screenshot](https://drive.google.com/file/d/0B79r4wTVj-CZdUtGU3p6WldHX2s/view)
+[▹ Tor Manager Screenshot](https://drive.google.com/file/d/0B79r4wTVj-CZdUtGU3p6WldHX2s/view)
 
 </details>
 
