@@ -9,6 +9,7 @@
 
 Running the automated setup script
 <details><summary>Expand for setup script commands</summary>
+<br>
   
 ```bash
 tips_setup.py <your_new_password>
