@@ -8,9 +8,17 @@
 ### [Setup ControlPort](https://drive.google.com/open?id=16YmyR4qVzEFOUSDhbPIeX-nzOPoKMszH):
 
 Running the automated setup script
-* `tips_setup.py <your_new_password>`
+<details><summary>Expand for setup script commands</summary>
+  
+```bash
+tips_setup.py <your_new_password>
+```
 
-* `sudo python tips_setup.py "password"`
+```python
+sudo python tips_setup.py "password"
+```
+
+</details>
 
 ***
 
