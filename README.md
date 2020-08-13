@@ -8,7 +8,7 @@
 ### [Setup ControlPort](https://drive.google.com/open?id=16YmyR4qVzEFOUSDhbPIeX-nzOPoKMszH):
 
 Running the automated tips_setup script
-<details><summary>Expand for setup script commands</summary>
+<details><summary>Expand for tips_setup script commands</summary>
 <br>
   
 ```bash
