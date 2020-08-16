@@ -53,7 +53,7 @@ Edit with sed editor: `/etc/tor/torrc`
 ***
 
 ### [Usage:](https://drive.google.com/file/d/1WR2mALkhO34PW2YK_CFJsLM7xnaeLK8w/view)
-* Method One: Run-as a background job and disown
+Method One: Run-as a background job and disown
 
 ```python
 tor_ip_switcher.py &
@@ -61,10 +61,15 @@ tor_ip_switcher.py &
 ```bash
 disown -a
 ```
-* Method Two: Run-as a screen session detached
+Method Two: Run-as a screen session detached
+<details><summary>Expand for run-as a screen session detached</summary>
+
+
 ```bash
 screen -dmS "torswitcher" tor_ip_switcher.py
 ```
+</details>
+
 ***
 
 ### [Tor IP Switcher](https://github.com/ruped24/tor_ip_switcher#tor_ip_switcher)
