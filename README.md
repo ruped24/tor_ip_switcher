@@ -63,7 +63,7 @@ disown -a
 ```
 Method Two: Run-as a screen session detached
 <details><summary>Expand for run-as a screen session detached</summary>
-
+<br>
 
 ```bash
 screen -dmS "torswitcher" tor_ip_switcher.py
