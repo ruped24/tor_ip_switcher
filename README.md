@@ -88,6 +88,8 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 
 </details>
 
+---
+
 ### [Installation and Setup](https://github.com/ruped24/tor_ip_switcher/wiki/Tor-IP-Switcher-installation)
 
 ### [Troubleshooting and FAQ](https://github.com/ruped24/tor_ip_switcher/wiki/Troubleshooting)
