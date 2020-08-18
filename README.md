@@ -32,21 +32,31 @@ Edit with sed editor: `/etc/tor/torrc`
 
 1. Remove the comment "#" from the line with  [#ControlPort 9051](https://github.com/torproject/tor/blob/ac44e70ffc047941d196596dd651019c054b7faf/src/config/torrc.sample.in#L57)
 
-* `sudo sed -i '/ControlPort /s/^#//' /etc/tor/torrc`
-
+ ```bash
+sudo sed -i '/ControlPort /s/^#//' /etc/tor/torrc
+```
 2. Remove the comment "#" from the line with [#HashedControlPassword](https://github.com/torproject/tor/blob/ac44e70ffc047941d196596dd651019c054b7faf/src/config/torrc.sample.in#L60)
 
-* `sudo sed -i '/HashedControlPassword /s/^#//' /etc/tor/torrc`
+```bash
+sudo sed -i '/HashedControlPassword /s/^#//' /etc/tor/torrc
+```
 
 3. Reset HashedControlPassword.
 
-* `tor --hash-password "Your_new_password"`
+```bash
+tor --hash-password "Your_new_password"
+```
 
-* Replace the old hashed password below `16:01234556789ABCDEF` with <16:your_new_password_hash>.
+4. Replace the old hashed password below `16:01234556789ABCDEF` with <16:your_new_password_hash>.
 
-* `sudo sed -i 's/^HashedControlPassword 16:.*[A-Z0-9]*$/HashedControlPassword 16:01234556789ABCDEF/' /etc/tor/torrc`
+```bash
+sudo sed -i 's/^HashedControlPassword 16:.*[A-Z0-9]*$/HashedControlPassword 16:01234556789ABCDEF/' /etc/tor/torrc
+```
 
-* [Reload](https://github.com/ruped24/toriptables2#to-change-tor-ip-address) the configuraton. `sudo toriptables2.py -r`
+5. [Reload](https://github.com/ruped24/toriptables2#to-change-tor-ip-address) the configuraton. 
+```bash
+sudo toriptables2.py -r
+```
 
 </details>
 
