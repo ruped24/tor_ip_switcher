@@ -82,7 +82,7 @@ if __name__ == '__main__':
             + "\n",
             "\033[92m["
             + "\u2719"
-            + "]\033[0m HashedControlPassword %s\n" % ControlHashedPassword,
+            + "]\033[0m HashedControlPassword %s\n" % ControlHashedPassword
         )
       else:
         exit("\033[91m[!]\033[0m /etc/tor/torrc missing.")
