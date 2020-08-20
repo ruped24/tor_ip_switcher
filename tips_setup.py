@@ -9,10 +9,10 @@
 from __future__ import print_function, unicode_literals
 
 from commands import getoutput
-from os import geteuid
+from os import geteuid, devnull
 from os.path import basename, isfile
 from subprocess import call
-from sys import argv, stdout
+from sys import argv, stdout, stderr
 from time import sleep
 
 ControlHashedPassword = ''.join(
@@ -25,17 +25,21 @@ def controlPort_setup():
 
 
 def controlHashed_password():
-  call([
-      "sed", "-i",
-      "s/^HashedControlPassword 16:.*[A-Z0-9]/HashedControlPassword %s/" %
-      ControlHashedPassword, "/etc/tor/torrc"
-  ])
+  call(
+      [
+        "sed",
+        "-i",
+        "s/^HashedControlPassword 16:.*[A-Z0-9]/HashedControlPassword %s/"
+        % ControlHashedPassword,
+        "/etc/tor/torrc",
+      ]
+  )
 
 
 def reload_tor_config():
   tor_running = getoutput('pidof tor')
   if tor_running:
-    call(['kill', '-HUP', '%s' % tor_running])
+    call(['kill', '-HUP', '%s' % tor_running], stderr=open(devnull,'w'))
     print("\n \033[92m[" + u'\u2714' + "]\033[0m Tor Config: Reloaded")
   else:
     print("\n \033[91m[" + u'\u2718' + "]\033[0m Tor Daemon: Not running")
@@ -62,14 +66,24 @@ if __name__ == '__main__':
         controlPort_setup()
         controlHashed_password()
         reload_tor_config()
-        print(" \033[92m[" + u'\u2714' + "]\033[0m ControlPort 9051: Enabled\n",
-              "\033[92m[" + u'\u2714' +
-              "]\033[0m HashedControlPassword: Enabled\n", "\033[92m[" +
-              u'\u2714' + "]\033[0m /etc/tor/torrc: Updated successfully\n",
-              "\033[92m[" + u'\u2719' + "]\033[0m Password set to: \033[92m" +
-              "%s" % ''.join(argv[1:]) + "\033[0m" + "\n",
-              "\033[92m[" + u'\u2719' +
-              "]\033[0m HashedControlPassword %s\n" % ControlHashedPassword)
+        print(
+            " \033[92m[" + "\u2714" + "]\033[0m ControlPort 9051: Enabled\n",
+            "\033[92m["
+            + "\u2714"
+            + "]\033[0m HashedControlPassword: Enabled\n",
+            "\033[92m["
+            + "\u2714"
+            + "]\033[0m /etc/tor/torrc: Updated successfully\n",
+            "\033[92m["
+            + "\u2719"
+            + "]\033[0m Password set to: \033[92m"
+            + "%s" % "".join(argv[1:])
+            + "\033[0m"
+            + "\n",
+            "\033[92m["
+            + "\u2719"
+            + "]\033[0m HashedControlPassword %s\n" % ControlHashedPassword,
+        )
       else:
         exit("\033[91m[!]\033[0m /etc/tor/torrc missing.")
     except Exception as err:
