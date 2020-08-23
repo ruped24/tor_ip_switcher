@@ -53,9 +53,9 @@ tor --hash-password "Your_new_password"
 sudo sed -i 's/^HashedControlPassword 16:.*[A-Z0-9]*$/HashedControlPassword 16:01234556789ABCDEF/' /etc/tor/torrc
 ```
 
-5. [Reload](https://github.com/ruped24/toriptables2#to-change-tor-ip-address) the configuraton. 
+5. Finally, reload the configuraton file. 
 ```bash
-sudo toriptables2.py -r
+sudo kill -HUP $(pidof tor)
 ```
 
 </details>
