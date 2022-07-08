@@ -107,9 +107,8 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 
 ### [Troubleshooting and FAQ](https://github.com/ruped24/tor_ip_switcher/wiki/Troubleshooting)
 
-```diff
-! tor_ip_switcher-x86_64.AppImage is now available.
-```
+### **[Tor_ip_switcher ELF 64-bit one file executable](https://github.com/ruped24/tor_ip_switcher/releases/tag/v2.7)**
+
 ***
 Credits:
 
