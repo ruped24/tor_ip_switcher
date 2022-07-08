@@ -8,7 +8,7 @@
 
 ### [tor_ip_switcher ELF 64-bit LSB executable, x86-64 - AppImage](https://github.com/ruped24/tor_ip_switcher/releases/tag/v2.7)
 
-![](https://img.shields.io/badge/tor__ip__switcher-AppImage-red.svg?style=flat-square)  ![Architecture](https://img.shields.io/badge/architecture-x86__64-blue.svg?style=flat-square)  ![](https://img.shields.io/badge/dependencies-tor-orange.svg?style=flat-square) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/ruped24/tor_ip_switcher/graphs/commit-activity)
+![](https://img.shields.io/badge/tor__ip__switcher-AppImage-red.svg?style=flat-square)  ![Architecture](https://img.shields.io/badge/architecture-x86__64-blue.svg?style=flat-square)  ![](https://img.shields.io/badge/dependencies-toriptables2_tor-orange.svg?style=flat-square) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/ruped24/tor_ip_switcher/graphs/commit-activity)
 
 
 ---
