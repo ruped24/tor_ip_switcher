@@ -9,7 +9,7 @@
 from os import devnull, geteuid
 from os.path import basename, isfile
 from subprocess import call, getoutput
-from sys import argv, stderr, stdout
+from sys import exit, argv, stderr, stdout
 from time import sleep
 
 ControlHashedPassword = ''.join(
