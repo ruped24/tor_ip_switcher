@@ -106,6 +106,10 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 ### [Installation and Setup](https://github.com/ruped24/tor_ip_switcher/wiki/Tor-IP-Switcher-installation)
 
 ### [Troubleshooting and FAQ](https://github.com/ruped24/tor_ip_switcher/wiki/Troubleshooting)
+
+```diff
+! tor_ip_switcher-x86_64.AppImage is now available.
+```
 ***
 Credits:
 
@@ -115,3 +119,5 @@ Anonymous-Dev
 
 ###### Disclaimer: ######
 ###### Pen-testing Only. ######
+
+
