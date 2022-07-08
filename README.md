@@ -69,10 +69,10 @@ sudo kill -HUP $(pidof tor)
 
 ***
 
-### [Usage:](https://drive.google.com/file/d/1WR2mALkhO34PW2YK_CFJsLM7xnaeLK8w/view)
+### [Usage](https://drive.google.com/file/d/1WR2mALkhO34PW2YK_CFJsLM7xnaeLK8w/view):
 
 <details><summary>Expand for usage</summary>
-<p>
+<br>
 Method One: Run-as a background job and disown
 
 ```python
@@ -82,6 +82,7 @@ tor_ip_switcher.py &
 disown
 ```
 Method Two: Run-as a screen session detached
+  
 <details><summary>Expand for run-as a screen session detached</summary>
 <br>
 
