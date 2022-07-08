@@ -111,8 +111,6 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 
 ### [Troubleshooting and FAQ](https://github.com/ruped24/tor_ip_switcher/wiki/Troubleshooting)
 
-### **[Tor_ip_switcher ELF 64-bit one file executable](https://github.com/ruped24/tor_ip_switcher/releases/tag/v2.7)**
-
 ***
 Credits:
 
