@@ -72,7 +72,7 @@ Method One: Run-as a background job and disown
 tor_ip_switcher.py &
 ```
 ```bash
-disown -a
+disown
 ```
 Method Two: Run-as a screen session detached
 <details><summary>Expand for run-as a screen session detached</summary>
