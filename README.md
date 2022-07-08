@@ -70,6 +70,9 @@ sudo kill -HUP $(pidof tor)
 ***
 
 ### [Usage:](https://drive.google.com/file/d/1WR2mALkhO34PW2YK_CFJsLM7xnaeLK8w/view)
+
+<details><summary>Expand for usage</summary>
+<p>
 Method One: Run-as a background job and disown
 
 ```python
@@ -87,7 +90,9 @@ screen -dmS "torswitcher" tor_ip_switcher.py
 ```
 </details>
 
-***
+</details>
+
+---
 
 ### [Tor IP Switcher](https://github.com/ruped24/tor_ip_switcher#tor_ip_switcher)
 <details><summary>Expand for screenie</summary>
