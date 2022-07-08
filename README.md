@@ -24,7 +24,7 @@ tips_setup.py <your_new_password>
 ```
 
 ```python
-sudo python tips_setup.py "password"
+sudo python3 tips_setup.py "password"
 ```
 
 </details>
