@@ -69,7 +69,7 @@ sudo kill -HUP $(pidof tor)
 
 ***
 
-### [Usage](https://drive.google.com/file/d/1WR2mALkhO34PW2YK_CFJsLM7xnaeLK8w/view):
+### [Usage](https://drive.google.com/file/d/0B79r4wTVj-CZOGJadlBtWWxPWFk/view?resourcekey=0-6GxU28nWepXCim7xtkUONA):
 
 <details><summary>Expand for usage</summary>
 <br>
