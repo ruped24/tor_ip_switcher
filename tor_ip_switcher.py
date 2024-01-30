@@ -119,7 +119,7 @@ class Switcher(Tk):
           try:
             my_new_ident = load(urlopen('https://check.torproject.org/api/ip'))['IP']
           except (URLError, ValueError):
-            my_new_ident = getoutput('wget -qO - ifconfig.me')
+            my_new_ident = getoutput('wget -qO - ident.me')
           self.write('Your IP is %s' % (my_new_ident))
         else:
           key = self.ident + 1
